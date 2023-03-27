@@ -1,0 +1,24 @@
+package Code_Java;
+abstract class XEMAY{
+    abstract void brake();
+}
+class XEMAYTHETHAO extends XEMAY{
+    @Override
+    void brake() {
+        System.out.println("Xe may the thao: chạy nhanh");       
+    }
+}
+class XEMAYLEONUI extends XEMAY{
+    @Override
+    void brake(){
+        System.out.println("Xe may leo nui: chạy trung binh ");
+    }
+}
+ class Lab7 {
+    public static void main(String[] args) {
+        XEMAYTHETHAO TT = new XEMAYTHETHAO();
+        TT.brake();
+        System.out.println("=====================");
+        XEMAYLEONUI LN = new XEMAYLEONUI();
+        LN.brake();
+    }
